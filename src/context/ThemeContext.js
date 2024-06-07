@@ -33,5 +33,4 @@ export const ThemeProvider = ({ children }) => {
     );
 };
 
-// Create and use your own hook instead of using useContext in the components
 export const useTheme = () => useContext(ThemeContext);

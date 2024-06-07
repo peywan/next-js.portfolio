@@ -12,15 +12,15 @@ body {
   @apply mx-auto max-w-7xl p-4;
 }
 
-.font-size-small {
+.font-size-small * {
   font-size: 0.875rem;
 }
 
-.font-size-medium {
+.font-size-medium * {
   font-size: 1rem;
 }
 
-.font-size-large {
+.font-size-large * {
   font-size: 1.25rem;
 }
 

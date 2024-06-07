@@ -21,12 +21,6 @@ const ThemeSwitcher = () => {
                 <option value="medium">Medium</option>
                 <option value="large">Large</option>
             </select>
-            <button
-                onClick={() => dispatch({ type: 'TOGGLE_ANIMATIONS' })}
-                className="ml-4 px-4 py-2 bg-green-500 text-white rounded-md hover:bg-green-600"
-            >
-                {state.userPreferences.reduceAnimations ? 'Enable' : 'Disable'} Animations
-            </button>
         </div>
     );
 };
