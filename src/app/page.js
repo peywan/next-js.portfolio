@@ -1,6 +1,7 @@
 import HeroSection from '../components/HeroSection';
 import ThemeSwitcher from '../components/ThemeSwitcher';
 import AboutMe from '../components/AboutMe';
+import CV from '../components/CV';
 import Footer from '../components/Footer';
 
 export default function Home() {
@@ -9,6 +10,7 @@ export default function Home() {
             <ThemeSwitcher />
             <HeroSection />
             <AboutMe />
+            <CV />
             <Footer />
         </div>
     );
