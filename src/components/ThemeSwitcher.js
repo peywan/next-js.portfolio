@@ -8,14 +8,14 @@ const ThemeSwitcher = () => {
         <div className="flex items-center justify-between p-4 bg-white dark:bg-gray-800 rounded-md shadow-md">
             <button
                 onClick={() => dispatch({ type: 'TOGGLE_THEME' })}
-                className="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600"
+                className="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 dark:bg-blue-700 dark:hover:bg-blue-800"
             >
                 Switch to {state.theme === 'light' ? 'Dark' : 'Light'} Mode
             </button>
             <select
                 value={state.userPreferences.fontSize}
                 onChange={(e) => dispatch({ type: 'SET_FONT_SIZE', payload: e.target.value })}
-                className="ml-4 p-2 border rounded-md"
+                className="ml-4 p-2 border rounded-md bg-white dark:bg-gray-700 dark:text-white"
             >
                 <option value="small">Small</option>
                 <option value="medium">Medium</option>
