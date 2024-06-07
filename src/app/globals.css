@@ -23,3 +23,8 @@ body {
 .font-size-large {
   font-size: 1.25rem;
 }
+
+.reduce-animations * {
+  animation: none !important;
+  transition: none !important;
+}

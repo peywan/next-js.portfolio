@@ -14,7 +14,15 @@ const AppWrapper = ({ children }) => {
         }
     }, [state.theme]);
 
-    return <div className="container">{children}</div>;
+    useEffect(() => {
+        if (state.userPreferences.reduceAnimations) {
+            document.documentElement.classList.add('reduce-animations');
+        } else {
+            document.documentElement.classList.remove('reduce-animations');
+        }
+    }, [state.userPreferences.reduceAnimations]);
+
+    return <div className={`container font-size-${state.userPreferences.fontSize}`}>{children}</div>;
 };
 
 export default function RootLayout({ children }) {

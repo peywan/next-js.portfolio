@@ -1,12 +1,11 @@
-"use client";
-import React, { createContext, useContext, useReducer } from 'react';
+import React, { createContext, useContext, useReducer } from "react";
 
 const ThemeContext = createContext();
 
 const initialState = {
-    theme: 'light',
+    theme: "light",
     userPreferences: {
-        fontSize: 'medium',
+        fontSize: "medium",
         reduceAnimations: false,
     },
 };
@@ -14,26 +13,11 @@ const initialState = {
 function themeReducer(state, action) {
     switch (action.type) {
         case 'TOGGLE_THEME':
-            return {
-                ...state,
-                theme: state.theme === 'light' ? 'dark' : 'light',
-            };
+            return { ...state, theme: state.theme === 'light' ? 'dark' : 'light' };
         case 'SET_FONT_SIZE':
-            return {
-                ...state,
-                userPreferences: {
-                    ...state.userPreferences,
-                    fontSize: action.payload,
-                },
-            };
+            return { ...state, userPreferences: { ...state.userPreferences, fontSize: action.payload } };
         case 'TOGGLE_ANIMATIONS':
-            return {
-                ...state,
-                userPreferences: {
-                    ...state.userPreferences,
-                    reduceAnimations: !state.userPreferences.reduceAnimations,
-                },
-            };
+            return { ...state, userPreferences: { ...state.userPreferences, reduceAnimations: !state.userPreferences.reduceAnimations } };
         default:
             return state;
     }
@@ -49,4 +33,5 @@ export const ThemeProvider = ({ children }) => {
     );
 };
 
+// Create and use your own hook instead of using useContext in the components
 export const useTheme = () => useContext(ThemeContext);
