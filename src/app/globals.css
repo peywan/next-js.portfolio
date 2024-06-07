@@ -4,12 +4,12 @@
 
 body {
   @apply bg-gray-100 text-gray-900 dark:bg-gray-900 dark:text-gray-100;
-  margin: 0;
+  margin: 20pxg;
   font-family: 'Inter', sans-serif;
 }
 
 .container {
-  @apply mx-auto max-w-4xl p-4;
+  @apply mx-auto max-w-6xl p-4;
 }
 
 .font-size-small {

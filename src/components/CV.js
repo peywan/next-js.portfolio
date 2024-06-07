@@ -3,7 +3,7 @@
 const CV = () => {
     return (
         <section className="py-20">
-            <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 mb-6 max-w-lg mx-auto">
+            <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 mb-6 max-w-3xl mx-auto">
                 <h2 className="text-3xl font-bold mb-4">Curriculum Vitae</h2>
                 <ul className="text-lg text-gray-700 dark:text-gray-300">
                     <li><strong>Frontend Developer</strong> | Bringing ideas to life through pure code | Chas Academy developer | Looking for internships during 1st of November - end of April.</li>

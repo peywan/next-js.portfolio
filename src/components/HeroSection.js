@@ -1,12 +1,12 @@
 "use client";
-import { useTheme } from '../context/ThemeContext';
+import { useTheme } from '@/context/ThemeContext';
 
 const HeroSection = () => {
     const { state } = useTheme();
 
     return (
         <section className={`font-size-${state.userPreferences.fontSize} py-20`}>
-            <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 mb-6 max-w-l mx-auto text-center">
+            <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 mb-6 max-w-3xl mx-auto">
                 <img
                     src="https://scontent.farn2-2.fna.fbcdn.net/v/t39.30808-6/424928883_783655863790790_8510291933938260959_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_ohc=WYJ8vyx2uh0Q7kNvgHo2365&_nc_ht=scontent.farn2-2.fna&oh=00_AYBhVeK46HF8RxfxVOUeTnEu6PiYKTTcCi-e3ehJaJpSnQ&oe=66694529"
                     alt="Profile"
