@@ -1,5 +1,5 @@
 "use client";
-import { ThemeProvider } from '@/context/ThemeContext';
+import { ThemeProvider } from '../context/ThemeContext';
 import '../app/globals.css';
 
 export default function RootLayout({ children }) {
@@ -7,7 +7,9 @@ export default function RootLayout({ children }) {
         <html lang="en">
         <body>
         <ThemeProvider>
-            {children}
+            <div className="container">
+                {children}
+            </div>
         </ThemeProvider>
         </body>
         </html>
