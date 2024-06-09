@@ -9,7 +9,7 @@ const HeroSection = () => {
         <section className={`font-size-${state.userPreferences.fontSize} py-6`}>
             <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 mb-4 mx-auto max-w-3xl">
                 <Image
-                    src={"https://scontent.farn2-2.fna.fbcdn.net/v/t39.30808-6/424928883_783655863790790_8510291933938260959_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_ohc=WYJ8vyx2uh0Q7kNvgHo2365&_nc_ht=scontent.farn2-2.fna&oh=00_AYBhVeK46HF8RxfxVOUeTnEu6PiYKTTcCi-e3ehJaJpSnQ&oe=66694529"}
+                    src={"https://scontent.farn2-2.fna.fbcdn.net/v/t39.30808-6/424928883_783655863790790_8510291933938260959_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_ohc=jnQEPSmB1qMQ7kNvgFGRjLG&_nc_ht=scontent.farn2-2.fna&oh=00_AYAV-eAINBcgtEVnsOOn_Hy73i_TtfA8PGImXOgvR_uMgA&oe=666B77A9"}
                     alt="Profile"
                     width={128} // Define the width
                     height={128} // Define the height
