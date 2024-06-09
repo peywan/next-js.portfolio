@@ -9,7 +9,9 @@
   ],
   "rules": {
     "react/no-unescaped-entities": "off",
-    "@next/next/no-img-element": "off"
+    "react/prop-types": "off",
+    "@next/next/no-img-element": "off",
+    "react/react-in-jsx-scope": "off"
   }
 }
 
